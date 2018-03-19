@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    persistence-unit name="NewPersistenceUnit">
+        <class>ipps.slr.models.AddressEntity</class>
+        <class>ipps.slr.models.AdministrativeterritoriesEntity</class>
+        <class>ipps.slr.models.GovernmentinstitutionEntity</class>
+        <class>ipps.slr.models.LicenseEntity</class>
+        <class>ipps.slr.models.LicenseactionEntity</class>
+        <class>ipps.slr.models.LicenseactioncrossEntity</class>
+        <class>ipps.slr.models.LicenseactivityEntity</class>
+        <class>ipps.slr.models.LicensedinstitutionEntity</class>
+        <class>ipps.slr.models.LicensedterritoryEntity</class>
+        <class>ipps.slr.models.LicensesEntity</class>
+        <class>ipps.slr.models.LicenseservicesEntity</class>
+        <class>ipps.slr.models.LicenseservicescrossEntity</class>
+        <class>ipps.slr.models.StreetEntity</class>
+        <class>ipps.slr.models.TaxinspectionEntity</class>
+        <class>ipps.slr.models.TypelocalityEntity</class>
+        <class>ipps.slr.models.TypeofcompanyEntity</class>
+        <class>ipps.slr.models.TypestreetEntity</class>
+        <class>ipps.slr.models.UlandieEntity</class>
+        <class>ipps.slr.models.UsersEntity</class>
+        <properties>
+            <property name="toplink.jdbc.url" value="jdbc:postgresql://localhost:5432/jahia"/>
+            <property name="toplink.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/jahia"/>
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+            <property name="openjpa.ConnectionURL" value="jdbc:postgresql://localhost:5432/jahia"/>
+            <property name="openjpa.ConnectionDriverName" value="org.postgresql.Driver"/>
+            <property name="eclipselink.jdbc.url" value="jdbc:postgresql://localhost:5432/jahia"/>
+            <property name="eclipselink.jdbc.driver" value="org.postgresql.Driver"/>
+        </properties>
+    </persistence-unit>
+</persistence>
